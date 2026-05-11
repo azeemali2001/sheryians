@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.mainContainer {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+
+    display: flex;
+}
+
+.left {
+    height: 100%;
+    width: 60%;
+    
+    background-color: #fbc50b;
+    position: relative;
+}
+
+.left .logo {
+    position: absolute;
+    width: 15%;
+    left: 10px;
+    top: -20px;
+}
+
+.left .pokimon {
+    position: absolute;
+    width: 70%;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+
+}
+
+.left .content {
+    padding: 160px 50px;
+}
+
+.left .content h1 {
+    font-weight: 800;
+    font-size: 80px;
+}
+
+.left .content p {
+    max-width: 400px;
+    padding: 10px;
+    line-height: 1.5;
+}
+
+.count {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.line {
+    width: 30px;
+    height: 2px;
+    background-color: black;
+}
+
+.right {
+    height: 100%;
+    width: 40%;
+    background-color: #fbe8b5;
+}
+
+.right i {
+    position: absolute;
+    font-size: 30px;
+    top: 15px;
+    right: 10px;
+}
