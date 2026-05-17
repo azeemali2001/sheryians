@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+
+header {
+    height: 15%;
+    width: 100%;
+    background-color: crimson;
+}
+
+
+nav {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+nav p {
+    font-size: 30px;
+    font-weight: 600;
+    padding: 2px 0px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+}
+
+
+nav p::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: black;
+
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    transition: width 1s ease;
+}
+
+nav p:hover::after {
+    width: 100%;
+}
