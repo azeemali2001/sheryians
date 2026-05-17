@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: black;
+}
+
+
+button {
+    all: unset;
+
+    color: rgb(35, 171, 216);
+    border: 1px solid rgb(35, 171, 216);
+    font-size: 20px;
+    padding: 15px 50px;
+    border-radius: 20px;
+    margin: 200px;
+
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 1s ease;
+}
+
+button::after {
+    content: "";
+    height: 100%;
+    width: 50%;
+    border-radius: 50%;
+    background-color: rgb(35, 171, 216);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    z-index: -1;
+    position: absolute;
+    transition: all 1s ease;
+}
+
+button:hover::after {
+    transform: translate(-50%, -50%) scale(3);
+}
+
+button:hover {
+    color: white;
+}
