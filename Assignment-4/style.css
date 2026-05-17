@@ -333,3 +333,107 @@ main .rightSection {
     width: 90%;
     border-radius: 40px;
 }
+
+footer {
+    padding: 50px 80px;
+    display: flex;
+}
+
+.leftFooter {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.leftFooter .content p {
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.leftFooter .content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.signature h1 {
+    font-family: "Allura", cursive;
+    font-size: 60px;
+    font-weight: 400;
+    position: relative;
+
+}
+
+.signature h1::after {
+    content: "";
+    width: 100%;
+    height: 5px;
+
+    position: absolute;
+    bottom: 25px;
+    left: 0px;
+    background-color: #f4d000;
+
+    z-index: -1;
+}
+
+
+.centerFooter {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    width: 30%;
+
+}
+
+.scrollBar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: rgb(226, 226, 226);
+}
+
+.scrollBar p {
+    font-size: 11px;
+}
+
+.rightFooter {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.rightFooter .upper {
+    display: flex;
+    width: 35%;
+    justify-content: flex-start;
+}
+
+.rightFooter .upper p {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.rightFooter .lower {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.rightFooter .lower h1 {
+    font-weight: 100;
+    font-size: 50px;
+    margin: -10px 0px;
+}
+
+.rightFooter .lower i {
+    padding: 20px 20px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+}
