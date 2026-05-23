@@ -1,0 +1,452 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+h1 {
+    font-family: "Source Serif 4", serif;
+}
+
+
+header {
+    height: 13%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+}
+
+header .left {
+    display: flex;
+    align-items: center;
+
+    gap: 40px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+header .left nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: white;
+}
+
+header .left nav div p {
+    font-size: 10px;
+    font-weight: 600;
+    position: relative;
+    cursor: pointer;
+}
+
+header .left nav div p::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0px;
+    background-color: black;
+
+    height: 2px;
+    width: 0%;
+
+    transition: all 0.4s ease;
+}
+
+header .left nav div p:hover::after {
+    width: 100%;
+}
+
+
+.dropDown {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+
+header .right {
+    display: flex;
+    align-items: center;
+}
+
+header .right .chip {
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+header .right .chip p {
+    font-size: 10px;
+    font-weight: 600;
+}
+
+header .right .chip:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* Main */
+main {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    height: 60%;
+    width: 100%;
+}
+
+main .center {
+
+    height: 100%;
+    width: 37%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    gap: 20px;
+
+    text-align: center;
+}
+
+main .center h1 {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+main .center .searchBar {
+    display: flex;
+    align-items: center;
+    background-color: #f3f3f4;
+    padding: 10px 20px;
+    gap: 200px;
+    border-radius: 50px;
+}
+
+main .center .searchBar:hover {
+    background-color: transparent;
+}
+
+.searchBar input {
+    all: unset;
+    text-align: start;
+}
+
+.searchBar .utility {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.utility p {
+    font-weight: 500;
+}
+
+.searchBar .utility .searchOption {
+    display: flex;
+}
+
+.utility .searchIcon {
+    background-color: #ec5e95;
+    color: white;
+    border-radius: 50%;
+    padding: 10px 13px;
+}
+
+.utility .searchIcon:hover {
+    background-color: transparent;
+    color: #ec5e95;
+    cursor: pointer;
+}
+
+.tags {
+    display: flex;
+    gap: 15px;
+}
+
+.tags p {
+    font-size: 10px;
+    padding: 7px 14px;
+    white-space: nowrap;
+}
+
+.gray {
+    border-radius: 50px;
+    background-color: #f3f3f4;
+}
+
+
+.gray:hover {
+    background-color: transparent;
+}
+
+.product {
+    width: 100%;
+    height: 160%;
+
+    /* background-color: red; */
+}
+
+.product .navigation {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    padding: 10px 30px;
+}
+
+.product .list {
+    display: flex;
+}
+
+.product .list p {
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 20px;
+    padding: 10px 15px;
+}
+
+.product .list p:hover {
+    background-color: #f3f3f4;
+    cursor: pointer;
+}
+
+.product .popular {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 6px 12px;
+    border: 1px solid #b9b9bf;
+    border-radius: 9px;
+}
+
+.product .popular p {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+
+
+
+.product .filter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 20px;
+    border: 1px solid #b9b9bf;
+    border-radius: 20px;
+}
+
+
+.product .filter i {
+    font-size: 11px;
+}
+
+.product .filter p {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+
+/* COntainer */
+
+.container {
+    width: 100%;
+    height: 80%;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+
+    gap: 14px;
+    padding: 0px 20px;
+    border-radius: 20px;
+}
+
+.container .item {
+    width: 24%;
+}
+
+.container .item .img {
+    width: 100%;
+
+    border-radius: 10px;
+}
+
+.container .item .lower {
+    /* background-color: red; */
+    height: 10%;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.lower .cont {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.lower .cont p {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.lower .cont .snip {
+    padding: 1px 6px;
+    background-color: #b9b9bf;
+}
+
+
+.lower .cont .snip p {
+    color: white;
+}
+
+.container .item .lower img {
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+}
+
+.like {
+    display: flex;
+    align-items: center;
+}
+
+.like p {
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.like i {
+    color: #b9b9bf;
+}
+
+.view {
+    display: flex;
+    align-items: center;
+}
+
+.view p {
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.view i {
+    color: #b9b9bf;
+}
+
+
+/* Sliding */
+
+.slidingOuter {
+    display: flex;
+    padding: 10px;
+    gap: 100px;
+    overflow: hidden;
+}
+
+.slidingInner {
+    display: flex;
+    gap: 60px;
+    animation: slide 10s linear infinite;
+}
+
+.slidingInner img {
+    padding: 30px;
+}
+
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.personal {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.personal .logo img{
+        height: 70px;
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+
+.terms p {
+    font-size: 11px;
+}
+
+.socials i{
+    font-size: 20px;
+}
+
+
+/* Footer */
+
+footer {
+    display: flex;
+    align-items: center;
+    height: 13%;
+    justify-content: space-around;
+}
+footer p, footer i {
+    font-size: 10px;
+    color: #b9b9bf;
+}
+footer .left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.left .copyright {
+    display: flex;
+    align-items: center;
+}
+
+.left .words {
+    display: flex;
+    gap: 15px;
+}
+
+
+footer .right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
