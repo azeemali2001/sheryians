@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+    padding: 30px;
+}
+
+/* Form */
+
+.formContainer {
+    max-width: 500px;
+    margin: auto;
+}
+
+.form {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.form input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+}
+
+.form input:focus {
+    border-color: royalblue;
+}
+
+.form button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: royalblue;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+.form button:hover {
+    transform: translateY(-2px);
+}
+
+/* Cards */
+
+.cardContainer {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: 0.25s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.content {
+    padding: 15px;
+}
+
+.content h1 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.content p {
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Buttons */
+
+.util {
+    display: flex;
+    gap: 10px;
+    padding: 15px;
+}
+
+.util button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.util button:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+}
